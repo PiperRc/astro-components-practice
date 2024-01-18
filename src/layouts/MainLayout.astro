@@ -1,0 +1,31 @@
+---
+import Navigation from "../layouts/Navigation.astro"
+import Footer from "../layouts/Footer.astro"
+import Css from "../layouts/Css.astro"
+import Js from "../layouts/Js.astro"
+
+---
+
+
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<Css/>
+  
+  </head>
+
+  <body>
+    <Navigation/>
+    <main>
+      <slot />
+    </main>
+
+    <Footer/>
+    <Js/>
+ 
+  </body>
+
+ 
+</html>
